@@ -1,6 +1,6 @@
-#!/bin/bash
-# Run this from your github clone.
-# It assumes you have tensorflow_docs as the "upstream" remote.
+!/bin/bash
+ Run this from your github clone.
+ It assumes you have tensorflow_docs as the "upstream" remote.
 
 OLD_BRANCH=$1
 NEW_BRANCH=$2
@@ -17,11 +17,11 @@ else
   echo '$NEW_BRANCH is unset' && exit
 fi
 
-# Print commands while running, and fail if a command fails
+ Print commands while running, and fail if a command fails
 set -e
 set -x
 
-# Merge the previous releases's docs into the current.
+ Merge the previous releases's docs into the current.
 git checkout master
 git pull upstream master
 
