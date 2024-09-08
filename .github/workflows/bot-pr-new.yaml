@@ -1,19 +1,19 @@
-# Greet new pull requests with a welcome comment and apply labels.
-# This workflow must initiate from an authenticated bot repo collaborator.
-# Webhook events: Pull requests
+ Greet new pull requests with a welcome comment and apply labels.
+ This workflow must initiate from an authenticated bot repo collaborator.
+ Webhook events: Pull requests
 name: New pull request
 on:
   repository_dispatch:
     types: [opened, reopened]
 
 permissions:
-  contents: read  #  to fetch code (actions/checkout)
+  contents: read    to fetch code (actions/checkout)
 
 jobs:
   comment-welcome:
     permissions:
-      contents: read  #  to fetch code (actions/checkout)
-      pull-requests: write  #  to comment on pull-request
+      contents: read    to fetch code (actions/checkout)
+      pull-requests: write   to comment on pull-request
 
     if: ${{ github.actor == 'tfdocsbot' }}
     runs-on: ubuntu-latest
