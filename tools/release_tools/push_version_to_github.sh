@@ -1,6 +1,6 @@
-#!/bin/bash
-# Run this from your github clone.
-# It assumes you have tensorflow_docs as the "upstream" remote.
+!/bin/bash
+ Run this from your github clone.
+ It assumes you have tensorflow_docs as the "upstream" remote.
 
 OLD_BRANCH=$1
 NEW_BRANCH=$2
