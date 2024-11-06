@@ -1,5 +1,5 @@
-# Greet new pull requests with a welcome comment and apply labels.
-# This workflow must initiate from an authenticated bot repo collaborator.
+ Greet new pull requests with a welcome comment and apply labels.
+ This workflow must initiate from an authenticated bot repo collaborator.
 # Webhook events: Pull requests
 name: New pull request
 on:
